@@ -28,7 +28,7 @@ class Products extends Sequelize.Model {
           allowNull: true,
         },
         price: {
-          type: DataTypes.STRING,
+          type: "MONEY",
           allowNull: true,
         },
         size: {
