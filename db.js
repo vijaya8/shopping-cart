@@ -15,6 +15,7 @@ let auto = new SequelizeAuto("testDB", "sa", "reallyStrongPwd123", {
   logging: console.log,
   tables: ["dbo.Groups", "dbo.Categories", "dbo.Products"],
 });
+
 auto.run(function (err) {
   if (err) throw err;
   console.log(auto.tables); // table list
