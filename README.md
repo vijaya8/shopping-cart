@@ -31,3 +31,12 @@ To run this we have to run below command
 goto the project folder.
 
 # node db.js
+
+migration and seeds for schema using knex module
+
+created the schema using below command:
+npx knex migrate:make groups1 -- to create migrations for particular table.
+
+After creating the schemas run the migrations to create tables in mssql
+
+npx knex migrate:latest
