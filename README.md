@@ -34,9 +34,14 @@ goto the project folder.
 
 migration and seeds for schema using knex module
 
-created the schema using below command:
-npx knex migrate:make groups1 -- to create migrations for particular table.
+created the schema using below command to create migrations for particular table.
+
+       npx knex migrate:make groups1
 
 After creating the schemas run the migrations to create tables in mssql
 
-npx knex migrate:latest
+      npx knex migrate:latest
+
+After that to feed the data for tables run below command
+
+       npx knex seed:run
